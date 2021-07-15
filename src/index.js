@@ -1,7 +1,6 @@
 'use strict';
 
-import prices from './modules/prices';
-import popUp from './modules/popUp';
+import togglePopup from './modules/togglePopup';
 import slider from './modules/slider';
 import services from './modules/services';
 import searchForServices from './modules/searchForServices';
@@ -9,11 +8,8 @@ import questions from './modules/questions';
 import scrollBeginn from './modules/scrollBeginn';
 import sendingForms from './modules/sendingForms';
 
-//Prices
-prices();
-
 // Modal PopUp
-popUp();
+togglePopup();
 
 // Slider
 slider();

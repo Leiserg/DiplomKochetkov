@@ -38,29 +38,7 @@ eval("\nmodule.exports = function () {\n\treturn /[\\u001b\\u009b][[()#;?]*(?:[0
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_prices__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/prices */ \"./src/modules/prices.js\");\n/* harmony import */ var _modules_popUp__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/popUp */ \"./src/modules/popUp.js\");\n/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/slider */ \"./src/modules/slider.js\");\n/* harmony import */ var _modules_services__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/services */ \"./src/modules/services.js\");\n/* harmony import */ var _modules_searchForServices__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/searchForServices */ \"./src/modules/searchForServices.js\");\n/* harmony import */ var _modules_questions__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/questions */ \"./src/modules/questions.js\");\n/* harmony import */ var _modules_scrollBeginn__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/scrollBeginn */ \"./src/modules/scrollBeginn.js\");\n/* harmony import */ var _modules_sendingForms__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/sendingForms */ \"./src/modules/sendingForms.js\");\n\n\n\n\n\n\n\n\n\n //Prices\n\n(0,_modules_prices__WEBPACK_IMPORTED_MODULE_0__.default)(); // Modal PopUp\n\n(0,_modules_popUp__WEBPACK_IMPORTED_MODULE_1__.default)(); // Slider\n\n(0,_modules_slider__WEBPACK_IMPORTED_MODULE_2__.default)(); // Services\n\n(0,_modules_services__WEBPACK_IMPORTED_MODULE_3__.default)(); // Search for services\n\n(0,_modules_searchForServices__WEBPACK_IMPORTED_MODULE_4__.default)(); // Questions\n\n(0,_modules_questions__WEBPACK_IMPORTED_MODULE_5__.default)(); // scroll to the beginning\n\n(0,_modules_scrollBeginn__WEBPACK_IMPORTED_MODULE_6__.default)(); //Sending forms\n\n(0,_modules_sendingForms__WEBPACK_IMPORTED_MODULE_7__.default)();\n\n//# sourceURL=webpack://DiplomKochetkov/./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/modules/popUp.js":
-/*!******************************!*\
-  !*** ./src/modules/popUp.js ***!
-  \******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar popUp = function popUp() {};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (popUp);\n\n//# sourceURL=webpack://DiplomKochetkov/./src/modules/popUp.js?");
-
-/***/ }),
-
-/***/ "./src/modules/prices.js":
-/*!*******************************!*\
-  !*** ./src/modules/prices.js ***!
-  \*******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar prices = function prices() {};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (prices);\n\n//# sourceURL=webpack://DiplomKochetkov/./src/modules/prices.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_togglePopup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/togglePopup */ \"./src/modules/togglePopup.js\");\n/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/slider */ \"./src/modules/slider.js\");\n/* harmony import */ var _modules_services__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/services */ \"./src/modules/services.js\");\n/* harmony import */ var _modules_searchForServices__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/searchForServices */ \"./src/modules/searchForServices.js\");\n/* harmony import */ var _modules_questions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/questions */ \"./src/modules/questions.js\");\n/* harmony import */ var _modules_scrollBeginn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/scrollBeginn */ \"./src/modules/scrollBeginn.js\");\n/* harmony import */ var _modules_sendingForms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/sendingForms */ \"./src/modules/sendingForms.js\");\n\n\n\n\n\n\n\n\n // Modal PopUp\n\n(0,_modules_togglePopup__WEBPACK_IMPORTED_MODULE_0__.default)(); // Slider\n\n(0,_modules_slider__WEBPACK_IMPORTED_MODULE_1__.default)(); // Services\n\n(0,_modules_services__WEBPACK_IMPORTED_MODULE_2__.default)(); // Search for services\n\n(0,_modules_searchForServices__WEBPACK_IMPORTED_MODULE_3__.default)(); // Questions\n\n(0,_modules_questions__WEBPACK_IMPORTED_MODULE_4__.default)(); // scroll to the beginning\n\n(0,_modules_scrollBeginn__WEBPACK_IMPORTED_MODULE_5__.default)(); //Sending forms\n\n(0,_modules_sendingForms__WEBPACK_IMPORTED_MODULE_6__.default)();\n\n//# sourceURL=webpack://DiplomKochetkov/./src/index.js?");
 
 /***/ }),
 
@@ -127,6 +105,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar slider = function slider() {};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (slider);\n\n//# sourceURL=webpack://DiplomKochetkov/./src/modules/slider.js?");
+
+/***/ }),
+
+/***/ "./src/modules/togglePopup.js":
+/*!************************************!*\
+  !*** ./src/modules/togglePopup.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar togglePopup = function togglePopup() {\n  var modalOverlay = document.querySelector('.modal-overlay'),\n      modalBtn = document.querySelectorAll('.callback-all-btn'),\n      modalBtnClose = document.querySelector('.modal-close');\n  modalBtn.forEach(function (elem) {\n    elem.addEventListener('click', function () {\n      modalOverlay.style.display = 'block';\n    });\n  });\n  modalBtnClose.addEventListener('click', function () {\n    modalOverlay.style.display = 'none';\n  });\n  modalOverlay.addEventListener('click', function (event) {\n    var target = event.target;\n\n    if (target.classList.contains('.popup-close')) {\n      modalOverlay.style.display = 'none';\n    } else {\n      target = target.closest('.modal-callback');\n      console.log(target);\n\n      if (!target) {\n        modalOverlay.style.display = 'none';\n      }\n    }\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (togglePopup);\n\n//# sourceURL=webpack://DiplomKochetkov/./src/modules/togglePopup.js?");
 
 /***/ }),
 
@@ -528,7 +517,7 @@ eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nf
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("c082ff84f56658f44848")
+/******/ 		__webpack_require__.h = () => ("b946c9f6b12b00c4cd8e")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

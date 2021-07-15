@@ -1,1 +1,1 @@
-(()=>{"use strict"})();
+(()=>{"use strict";var e,l,c;e=document.querySelector(".modal-overlay"),l=document.querySelectorAll(".callback-all-btn"),c=document.querySelector(".modal-close"),l.forEach((function(l){l.addEventListener("click",(function(){e.style.display="block"}))})),c.addEventListener("click",(function(){e.style.display="none"})),e.addEventListener("click",(function(l){var c=l.target;c.classList.contains(".popup-close")?e.style.display="none":(c=c.closest(".modal-callback"),console.log(c),c||(e.style.display="none"))}))})();
