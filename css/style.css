@@ -271,7 +271,7 @@ a.absolute {
 	right: 0;
 	bottom: 0;
 	background: rgba(0, 0, 0, 0.6);
-	z-index: 9;
+	z-index: 95;
 }
 .modal-close {
 	position: fixed;

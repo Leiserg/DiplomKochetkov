@@ -1,7 +1,7 @@
 'use strict';
 
-import togglePopup from './modules/togglePopup';
-import slider from './modules/slider';
+import togglePopup from './modules/togglePopup'; //сделано
+import topSlider from './modules/topSlider'; //сделано
 import services from './modules/services';
 import searchForServices from './modules/searchForServices';
 import questions from './modules/questions';
@@ -11,8 +11,8 @@ import sendingForms from './modules/sendingForms';
 // Modal PopUp
 togglePopup();
 
-// Slider
-slider();
+// Topslider
+topSlider();
 
 // Services
 services();
