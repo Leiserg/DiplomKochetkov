@@ -38,7 +38,7 @@ eval("\nmodule.exports = function () {\n\treturn /[\\u001b\\u009b][[()#;?]*(?:[0
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_togglePopup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/togglePopup */ \"./src/modules/togglePopup.js\");\n/* harmony import */ var _modules_topSlider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/topSlider */ \"./src/modules/topSlider.js\");\n/* harmony import */ var _modules_services__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/services */ \"./src/modules/services.js\");\n/* harmony import */ var _modules_searchForServices__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/searchForServices */ \"./src/modules/searchForServices.js\");\n/* harmony import */ var _modules_questions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/questions */ \"./src/modules/questions.js\");\n/* harmony import */ var _modules_scrollBeginn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/scrollBeginn */ \"./src/modules/scrollBeginn.js\");\n/* harmony import */ var _modules_sendingForms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/sendingForms */ \"./src/modules/sendingForms.js\");\n\n\n //сделано\n\n //сделано\n\n\n\n\n\n // Modal PopUp\n\n(0,_modules_togglePopup__WEBPACK_IMPORTED_MODULE_0__.default)(); // Topslider\n\n(0,_modules_topSlider__WEBPACK_IMPORTED_MODULE_1__.default)(); // Services\n\n(0,_modules_services__WEBPACK_IMPORTED_MODULE_2__.default)(); // Search for services\n\n(0,_modules_searchForServices__WEBPACK_IMPORTED_MODULE_3__.default)(); // Questions\n\n(0,_modules_questions__WEBPACK_IMPORTED_MODULE_4__.default)(); // scroll to the beginning\n\n(0,_modules_scrollBeginn__WEBPACK_IMPORTED_MODULE_5__.default)(); //Sending forms\n\n(0,_modules_sendingForms__WEBPACK_IMPORTED_MODULE_6__.default)();\n\n//# sourceURL=webpack://DiplomKochetkov/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_togglePopup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/togglePopup */ \"./src/modules/togglePopup.js\");\n/* harmony import */ var _modules_topSlider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/topSlider */ \"./src/modules/topSlider.js\");\n/* harmony import */ var _modules_services__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/services */ \"./src/modules/services.js\");\n/* harmony import */ var _modules_questions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/questions */ \"./src/modules/questions.js\");\n/* harmony import */ var _modules_scrolling__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/scrolling */ \"./src/modules/scrolling.js\");\n/* harmony import */ var _modules_sendingForms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/sendingForms */ \"./src/modules/sendingForms.js\");\n\n\n //сделано\n\n //сделано\n\n //сделано\n\n\n //сделано\n\n // Modal PopUp\n\n(0,_modules_togglePopup__WEBPACK_IMPORTED_MODULE_0__.default)(); // Topslider\n\n(0,_modules_topSlider__WEBPACK_IMPORTED_MODULE_1__.default)(); // Services\n\n(0,_modules_services__WEBPACK_IMPORTED_MODULE_2__.default)(); // Questions\n\n(0,_modules_questions__WEBPACK_IMPORTED_MODULE_3__.default)(); // ScrollButton and Scroll to the beginning\n\n(0,_modules_scrolling__WEBPACK_IMPORTED_MODULE_4__.default)(); //Sending forms\n\n(0,_modules_sendingForms__WEBPACK_IMPORTED_MODULE_5__.default)();\n\n//# sourceURL=webpack://DiplomKochetkov/./src/index.js?");
 
 /***/ }),
 
@@ -53,25 +53,14 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/modules/scrollBeginn.js":
-/*!*************************************!*\
-  !*** ./src/modules/scrollBeginn.js ***!
-  \*************************************/
+/***/ "./src/modules/scrolling.js":
+/*!**********************************!*\
+  !*** ./src/modules/scrolling.js ***!
+  \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar scrollBeginn = function scrollBeginn() {};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (scrollBeginn);\n\n//# sourceURL=webpack://DiplomKochetkov/./src/modules/scrollBeginn.js?");
-
-/***/ }),
-
-/***/ "./src/modules/searchForServices.js":
-/*!******************************************!*\
-  !*** ./src/modules/searchForServices.js ***!
-  \******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar searchForServices = function searchForServices() {};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (searchForServices);\n\n//# sourceURL=webpack://DiplomKochetkov/./src/modules/searchForServices.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar scrolling = function scrolling() {\n  var up = document.querySelector('.up');\n  var body = document.querySelector('body');\n  window.addEventListener('scroll', function () {\n    if (window.pageYOffset >= 400) {\n      up.style.display = 'block'; // console.log(1);\n    } else {\n      up.style.display = 'none'; // console.log(2);\n    }\n  });\n  up.addEventListener('click', function () {\n    window.scrollTo(0, 0);\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (scrolling);\n\n//# sourceURL=webpack://DiplomKochetkov/./src/modules/scrolling.js?");
 
 /***/ }),
 
@@ -93,7 +82,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar services = function services() {};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (services);\n\n//# sourceURL=webpack://DiplomKochetkov/./src/modules/services.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar services = function services() {\n  var elementFaq = document.querySelectorAll('.element-faq'),\n      title = document.querySelectorAll('.question'),\n      element1 = document.getElementById('kok'),\n      elementContent = document.querySelectorAll('.answer');\n  element1.style.display = 'none';\n  elementFaq.forEach(function (elem, index) {\n    elem.addEventListener('click', function (event) {\n      event.preventDefault();\n      var target = event.target;\n      elementFaq.forEach(function (e, i) {\n        e.classList.remove('active');\n        elementContent[i].style.display = 'none';\n      });\n\n      if (target === title[index]) {\n        elem.classList.toggle('active');\n\n        if (elem.classList.contains('active')) {\n          elementContent[index].style.display = 'block';\n        } else {\n          elementContent[index].style.display = 'none';\n        }\n      }\n    });\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (services);\n\n//# sourceURL=webpack://DiplomKochetkov/./src/modules/services.js?");
 
 /***/ }),
 
@@ -517,7 +506,7 @@ eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nf
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("029bafd9471814a850b0")
+/******/ 		__webpack_require__.h = () => ("55bf5efdadfc5f43c155")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
