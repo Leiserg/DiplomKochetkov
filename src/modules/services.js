@@ -1,11 +1,8 @@
 const services = () => {
     const elementFaq = document.querySelectorAll('.element-faq'),
         title = document.querySelectorAll('.question'),
-        element1= document.getElementById('kok'),
         elementContent = document.querySelectorAll('.answer');
 
-        element1.style.display = 'none';
-       
     elementFaq.forEach((elem, index) => {
         elem.addEventListener('click', (event) => {
             event.preventDefault();

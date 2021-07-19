@@ -1,10 +1,10 @@
 const sendForm = () => {
-    const errorMessage  =  'Что-то пошло не так...',
-        loadMessage = 'Загрузка...',
-        succesMessage = 'Спасибо! Мы скоро с Вами свяжемся!';
+    const errorMessage  =  'Ошибка',
+        loadMessage = 'Идет отправка',
+        succesMessage = 'Отправлено';
 
     const form = document.getElementById('callback-sandform'),
-        titleForm = document.querySelector('.send-form');
+        titleForm = document.getElementById('koch-submit');
 
     const statusMessage = document.createElement('div');
 
@@ -25,8 +25,8 @@ const sendForm = () => {
 
     form.addEventListener('submit', (event) =>{
         event.preventDefault();
-        titleForm.textContent = ' ';
-        titleForm.appendChild(statusMessage);
+        titleForm.style.display = 'none';
+        form.appendChild(statusMessage);
 
         const request = new XMLHttpRequest();
         request.addEventListener('readystatechange', () => {
