@@ -3,9 +3,9 @@
 import togglePopup from './modules/togglePopup'; //сделано
 import topSlider from './modules/topSlider'; //сделано
 import services from './modules/services';//сделано
-import questions from './modules/questions';
 import scrolling from './modules/scrolling'; //сделано
-import sendingForms from './modules/sendingForms';
+import carousel from './modules/carousel';//сделано
+import sendForm from './modules/sendForm';//сделано
 
 // Modal PopUp
 togglePopup();
@@ -13,14 +13,16 @@ togglePopup();
 // Topslider
 topSlider();
 
-// Services
-services();
-
-// Questions
-questions();
-
 // ScrollButton and Scroll to the beginning
 scrolling();
 
+//Carousel
+carousel.init();
+
+// Services
+services();
+
 //Sending forms
-sendingForms();
+sendForm();
+
+
